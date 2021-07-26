@@ -1,21 +1,25 @@
 /* Utilities */ 
 body {
     font-family: sans-serif;
+    background-color: #dddddd;
 }
 
 /* HEADER */ 
-#top-header, #bottom-header {
-    height: 70px;
+#top-header{
+    height: 80px;
+    background-color: white;
 }
 
 
 #top-header h1 {
     color: #29b1dd;
     font-family: 'Acme', sans-serif;
+    font-size: 2.8em;
 }
 
 
 #bottom-header {
+    height: 70px;
     color: white;
     background-color: #29b1dd;
 }
@@ -23,8 +27,22 @@ body {
 
 /* MAIN */ 
 main {
-    background-color: #dddddd;
+    height: 100vh - 150px;
 }
+
+.icon-box {
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px grey;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.icon-text {;
+    text-align: center;
+}
+
+
 
 .animal {
     color: blue;
