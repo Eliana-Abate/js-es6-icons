@@ -70,10 +70,11 @@ console.log(allTypes);
 
 //! Adesso le diverse proprietà "TYPE" diventano elementi dell'array 'allTypes' e questo mi permette di usare un altro ciclo FOR-EACH per costruire la stringa per le OPTIONS"
 
-let option = '';
+
+let option = '<option selected value = "all">All</option>';
 
 allTypes.forEach((element) => {
-    option += `<option value = ${element}>${element.charAt(0).toUpperCase()}${element.slice(1)}</option>`;
+    option += `<option value = "${element}">${element.charAt(0).toUpperCase()}${element.slice(1)}</option>`;
 });
 
 
