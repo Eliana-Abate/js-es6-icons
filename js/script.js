@@ -4,10 +4,15 @@ const printIcons = (array, targetElement) => {
 
     let iconTemplate = '';
 
-    array.forEach((element) => {
+    array.forEach((element, index) => {
+        //Creo variabile per gestire l'offset
+        let hasOffset = '';
+        if (index == 0 || index % 5 == 0) {
+            hasOffset += "offset-md-1";
+        }
         //copio struttura creata in html, inserisco le proprietà degli oggetti
         iconTemplate += `
-        <div class="col col-sm-4 col-md-2 offset-md-1">
+        <div class="col col-sm-4 col-md-2 ${hasOffset}">
             <div class="card">
                 <div class="card-body">
                     <i class="${element.family} ${element.prefix}${element.name} fa-2x"></i>
