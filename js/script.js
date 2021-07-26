@@ -29,7 +29,59 @@ const printIcons = (array, targetElement) => {
  
 
 
+//Filtro Select
+const selectField = document.getElementById('form-selection');
+
+selectField.addEventListener('change', () => {
+    const selectionValue = selectField.value;
+
+    if (selectionValue === 'all'){
+        printIcons (icons, iconSection);
+        return;
+    }
+
+    const filteredIcons = icons.filter((arrayElement) => {
+        if (selectionValue === arrayElement.type) {
+            return true;
+        }
+        return false;
+    });
+
+    printIcons (filteredIcons, iconSection);
+
+});
+
+
+
+
+//Ciclo per far scrivere le proprietà del select in maniera automatica
+
+const allTypes = [];
+
+icons.forEach((element) => {
+    if(!allTypes.includes(element.type)){
+        allTypes.push(element.type);
+    }
+});
+
+console.log(allTypes);
+
+
+
+//! Adesso le diverse proprietà "TYPE" diventano elementi dell'array 'allTypes' e questo mi permette di usare un altro ciclo FOR-EACH per costruire la stringa per le OPTIONS"
+
+let option = '';
+
+allTypes.forEach((element) => {
+    option += `<option value = ${element}>${element}</option>`;
+});
+
+
+
+
 
 // Stampa in Html
 const iconSection = document.querySelector('#icons .row');
 printIcons (icons, iconSection);
+
+selectField.innerHTML = option;
