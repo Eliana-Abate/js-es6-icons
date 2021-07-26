@@ -1,0 +1,25 @@
+/* Utilities */ 
+body {
+    font-family: 'Acme', sans-serif;
+}
+
+/* HEADER */ 
+#top-header, #bottom-header {
+    height: 60px;
+}
+
+
+#top-header h1 {
+    color: #29b1dd;
+}
+
+
+#bottom-header {
+    background-color: #29b1dd;
+}
+
+
+/* MAIN */ 
+main {
+    background-color: #dddddd;
+}
