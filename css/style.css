@@ -1,20 +1,22 @@
 /* Utilities */ 
 body {
-    font-family: 'Acme', sans-serif;
+    font-family: sans-serif;
 }
 
 /* HEADER */ 
 #top-header, #bottom-header {
-    height: 60px;
+    height: 70px;
 }
 
 
 #top-header h1 {
     color: #29b1dd;
+    font-family: 'Acme', sans-serif;
 }
 
 
 #bottom-header {
+    color: white;
     background-color: #29b1dd;
 }
 
