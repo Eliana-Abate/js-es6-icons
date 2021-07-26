@@ -12,9 +12,9 @@ const printIcons = (array, targetElement) => {
         }
         //copio struttura creata in html, inserisco le proprietà degli oggetti
         iconTemplate += `
-        <div class="col col-sm-4 col-md-2 ${hasOffset}">
-            <div class="card">
-                <div class="card-body">
+        <div class="d-flex justify-content-center col-12 col-sm-4 col-md-2 ${hasOffset}">
+            <div class="card icon-box">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
                     <i class="${element.family} ${element.prefix}${element.name} fa-2x ${element.type}"></i>
                     <h6>${element.name.toUpperCase()}</h6>
                 </div>
