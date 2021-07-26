@@ -15,7 +15,7 @@ const printIcons = (array, targetElement) => {
         <div class="col col-sm-4 col-md-2 ${hasOffset}">
             <div class="card">
                 <div class="card-body">
-                    <i class="${element.family} ${element.prefix}${element.name} fa-2x"></i>
+                    <i class="${element.family} ${element.prefix}${element.name} fa-2x ${element.type}"></i>
                     <h6>${element.name.toUpperCase()}</h6>
                 </div>
             </div>

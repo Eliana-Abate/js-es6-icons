@@ -25,3 +25,19 @@ body {
 main {
     background-color: #dddddd;
 }
+
+.animal {
+    color: blue;
+}
+
+.vegetable {
+    color: rgb(255, 196, 34);
+}
+
+.user {
+    color: purple;
+}
+
+.company {
+    color: seagreen;
+}
