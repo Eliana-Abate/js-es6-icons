@@ -8,7 +8,7 @@ icons.forEach ((icon) => {
     <div class="col col-sm-4 col-md-2 offset-md-1">
         <div class="card">
             <div class="card-body">
-                <i class="${icons.family} ${icons.prefix}${icons.type} fa-2x"></i>
+                <i class="${icons.family} ${icons.prefix}${icons.name} fa-2x"></i>
                 <h6>${icons.name}</h6>
             </div>
         </div>
