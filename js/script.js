@@ -73,7 +73,7 @@ console.log(allTypes);
 let option = '';
 
 allTypes.forEach((element) => {
-    option += `<option value = ${element}>${element}</option>`;
+    option += `<option value = ${element}>${element.charAt(0).toUpperCase()}${element.slice(1)}</option>`;
 });
 
 
