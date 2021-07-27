@@ -26,9 +26,6 @@ body {
 
 
 /* MAIN */ 
-main {
-    height: calc(100vh - 150px);
-}
 
 .icon-box {
     width: 250px;
